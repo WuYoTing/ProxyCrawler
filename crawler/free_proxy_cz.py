@@ -7,7 +7,6 @@ from lib.test_proxy import test_proxy_usability
 def free_proxy_cz(driver):
     ip_pool = dict()
     for page in range(1, 5):
-        print("{} : {}".format("page", page))
         # 用迴圈逐一打開分頁
         url = 'http://free-proxy.cz/en/proxylist/country/all/http/ping/all/{}'.format(page)
         driver.get(url)
